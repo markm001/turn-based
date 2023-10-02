@@ -1,0 +1,34 @@
+[gd_scene load_steps=5 format=3 uid="uid://djtvlvkgy7hc3"]
+
+[ext_resource type="Texture2D" uid="uid://cuy0bvdeu1kfy" path="res://assets/VX-ACE Hero-Heroine Faceset.png" id="1_r13en"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v8s8j"]
+atlas = ExtResource("1_r13en")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dde5"]
+atlas = ExtResource("1_r13en")
+region = Rect2(0, 96, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ecscl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v8s8j")
+}],
+"loop": true,
+"name": &"icon_selection_1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dde5")
+}],
+"loop": true,
+"name": &"icon_selection_2",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_ecscl")
+animation = &"icon_selection_1"

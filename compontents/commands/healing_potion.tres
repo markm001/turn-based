@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://bbq8dpjd3ku2o"]
+
+[ext_resource type="Script" path="res://compontents/commands/item.gd" id="2_x4awp"]
+
+[resource]
+script = ExtResource("2_x4awp")
+short_description = ""
+name = "Small Potion"
+description = ""

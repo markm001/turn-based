@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Attributes" load_steps=4 format=3 uid="uid://cokqmgujogrlq"]
+
+[ext_resource type="Script" path="res://compontents/units/attributes.gd" id="1_lbwxo"]
+[ext_resource type="Texture2D" uid="uid://d2yevdjqh3ujh" path="res://assets/shield_icon.tres" id="1_tahsq"]
+[ext_resource type="PackedScene" uid="uid://be63pe7wx0oml" path="res://compontents/combat/animations/lancelot_animations.tscn" id="1_x7r6r"]
+
+[resource]
+script = ExtResource("1_lbwxo")
+name = "Lancelot"
+max_health = 10
+initiative = 12
+class_icon = ExtResource("1_tahsq")
+animations = ExtResource("1_x7r6r")
+commands = Array[Resource("res://compontents/commands/command.gd")]([])

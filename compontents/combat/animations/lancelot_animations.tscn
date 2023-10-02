@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://be63pe7wx0oml"]
+
+[ext_resource type="Texture2D" uid="uid://suwouaewri0j" path="res://assets/Hero-1-Bust.png" id="1_436ul"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_e7xg7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_436ul")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(0, -53)
+scale = Vector2(0.2, 0.2)
+sprite_frames = SubResource("SpriteFrames_e7xg7")
+animation = &"Idle"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]

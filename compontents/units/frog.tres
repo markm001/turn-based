@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Attributes" load_steps=3 format=3 uid="uid://cogsvgt8amfms"]
+
+[ext_resource type="PackedScene" uid="uid://d0ixteb7fwkdc" path="res://compontents/combat/animations/frog_animations.tscn" id="1_ecw3a"]
+[ext_resource type="Script" path="res://compontents/units/attributes.gd" id="1_pvp5o"]
+
+[resource]
+script = ExtResource("1_pvp5o")
+name = "Frog"
+max_health = 10
+initiative = 11
+animations = ExtResource("1_ecw3a")
+commands = Array[Resource("res://compontents/commands/command.gd")]([])

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Attributes" load_steps=4 format=3 uid="uid://dfg0sv5yfphty"]
+
+[ext_resource type="Texture2D" uid="uid://krb7kxkmvqd1" path="res://assets/staff_icon.tres" id="1_n5fvt"]
+[ext_resource type="PackedScene" uid="uid://co4l5qjwepxrp" path="res://compontents/combat/animations/azyrran_animations.tscn" id="1_uim8e"]
+[ext_resource type="Script" path="res://compontents/units/attributes.gd" id="2_goqsd"]
+
+[resource]
+script = ExtResource("2_goqsd")
+name = "Azyrran"
+max_health = 10
+initiative = 10
+class_icon = ExtResource("1_n5fvt")
+animations = ExtResource("1_uim8e")
+commands = Array[Resource("res://compontents/commands/command.gd")]([])

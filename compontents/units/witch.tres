@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Attributes" load_steps=3 format=3 uid="uid://bfknpxykeiaqg"]
+
+[ext_resource type="Script" path="res://compontents/units/attributes.gd" id="1_0sldq"]
+[ext_resource type="PackedScene" uid="uid://b8tfg2mblybr8" path="res://compontents/combat/animations/witch_animations.tscn" id="1_hgho5"]
+
+[resource]
+script = ExtResource("1_0sldq")
+name = "Witch"
+max_health = 20
+initiative = 10
+animations = ExtResource("1_hgho5")
+commands = Array[Resource("res://compontents/commands/command.gd")]([])
